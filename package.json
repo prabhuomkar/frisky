@@ -1,7 +1,7 @@
 {
   "name": "frisky",
   "version": "1.0.0",
-  "description": "An open source platform for online streaming consumers",
+  "description": "Open Source GraphQL API for Online Shows",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
