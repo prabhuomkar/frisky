@@ -8,14 +8,17 @@ type Episode {
     seasonNumber: Int!
     episodeNumber: Int!
     poster: String!
-    createdAt: String!
-    updatedAt: String!
 }
 
-type Poster {
+type Posters {
     vertical: [String]
     horizontal: [String]
     background: [String]
+}
+
+type ServiceProvider {
+    name: String!
+    id: String!
 }
 
 type Show {
@@ -27,17 +30,55 @@ type Show {
     creators: [String]
     starring: [String]
     directors: [String]
+    genres: [String]
     episodes: [Episode!]!
-    createdAt: String!
-    updatedAt: String!
+    posters: Posters!
+    serviceProviders: [ServiceProvider!]!
 }
 
-type RootQuery {
-    shows: [Show!]!
-    episodes: [Episode!]!
+input ServiceProviderInput {
+    name: String
+    id: String
+}
+
+input ShowWhereInput {
+    _id: String
+    name: String
+    year: Int
+    numberOfSeasons: Int
+    genres: [String]
+    serviceProviders: ServiceProviderInput
+    episodes: EpisodeWhereInput
+}
+
+input ShowOrderByInput {
+    _id: Int
+    name: Int
+    year: Int
+    numberOfSeasons: Int
+    episodes: EpisodeOrderByInput
+}
+
+input EpisodeWhereInput {
+    _id: String
+    name: String
+    seasonNumber: Int
+    episodeNumber: Int
+}
+
+input EpisodeOrderByInput {
+    _id: Int
+    name: Int
+    seasonNumber: Int
+    episodeNumber: Int
+}
+
+type Query {
+    shows(limit: Int = 10, offset: Int = 0, orderBy: ShowOrderByInput, where: ShowWhereInput): [Show!]!
+    episodes(limit: Int = 10, offset: Int = 0, orderBy: EpisodeOrderByInput, where: EpisodeWhereInput): [Episode!]!
 }
 
 schema {
-    query: RootQuery
+    query: Query
 }
 `)

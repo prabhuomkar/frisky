@@ -28,7 +28,10 @@ const showSchema = new mongoose.Schema({
     directors: [{
         type: String
     }],
-    posters: [{
+    genres: [{
+        type: String
+    }],
+    posters: {
         horizontal: [{
             type: String
         }],
@@ -38,7 +41,7 @@ const showSchema = new mongoose.Schema({
         background: [{
             type: String
         }]
-    }],
+    },
     serviceProviders: [{
         name: {
             type: String,

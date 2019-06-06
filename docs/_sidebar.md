@@ -1,3 +1,5 @@
+- [Home](README.md)
+
 - Reference
 
     - [Overview](overview.md)
@@ -10,7 +12,6 @@
     - [Overview](guide-overview.md)
     - [Intro to GraphQL](intro-graphql.md)
     - [Forming Calls](forming-calls.md)
-    - [Migrating from REST](migrating-rest.md)
     - [Using the Explorer](using-explorer.md)
 
 - [Explorer](https://frisky.herokuapp.com/graphql)
