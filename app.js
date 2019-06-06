@@ -5,6 +5,8 @@ const mongoose = require('mongoose')
 const helmet = require('helmet')
 const dotenv = require('dotenv')
 const chalk = require('chalk')
+const winston = require('winston')
+const expressWinston = require('express-winston')
 
 const graphQlSchema = require('./graphql/schema/index')
 const graphQlResolvers = require('./graphql/resolvers/index')
@@ -29,6 +31,15 @@ app.use(helmet())
 app.set('x-powered-by', 'Frisky Server')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(expressWinston.logger({
+    transports: [
+        new winston.transports.Console(),
+        new winston.transports.File({ filename: 'logs/'+new Date().toISOString().substring(0, 10)+'.log' })
+    ],
+    format: winston.format.combine(
+        winston.format.json()
+    )
+}));
 
 /**
  * MongoDB Connection
@@ -62,6 +73,10 @@ mongoose
         console.log(err)
         console.log(chalk.red('Shutting down Frisky Server'))
     })
+
+/**
+ * Database Connection Events
+ */
 const connection = mongoose.connection;
 connection.on('connected', () => {
     console.log(chalk.green(`✔︎ Connected to Database: ${dbUri}`))
