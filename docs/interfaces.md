@@ -13,13 +13,7 @@ The name of the show in plain text.
 ##### description ([String](scalars.md#string))
 The description of the show in plain text.
 
-##### createdAt ([DateTime!](scalars.md#datetime))
-Identifies the date and time when the object was created.
-
-##### updatedAt ([DateTime!](scalars.md#datetime))
-Identifies the date and time when the object was last updated.
-
-##### id ([ID!](scalars.md#id))
+##### _id ([ID!](scalars.md#id))
 
 ##### numberOfSeasons ([Int!](scalars.md#int))
 The total count of seasons for the given show.
@@ -28,6 +22,9 @@ The total count of seasons for the given show.
 The year when the show was released.
 
 ##### posters ([Poster!](interfaces.md#posters))
+The show's poster in different formats.
+
+##### serviceProviders ([ServiceProvider!]!(interfaces.md#service-providers))
 The show's poster in different formats.
 
 ##### creators ([[String!](scalars.md#string)])
@@ -50,13 +47,7 @@ The name of the episode in plain text.
 ##### description ([String](scalars.md#string))
 The description of the episode in plain text.
 
-##### createdAt ([DateTime!](scalars.md#datetime))
-Identifies the date and time when the object was created.
-
-##### updatedAt ([DateTime!](scalars.md#datetime))
-Identifies the date and time when the object was last updated.
-
-##### id ([ID!](scalars.md#id))
+##### _id ([ID!](scalars.md#id))
 
 ##### seasonNumber ([Int!](scalars.md#int))
 The season number to which this episode belongs.
@@ -67,7 +58,7 @@ The episode number of the given episode.
 ##### poster ([URI!](scalars.md#uri))
 The episode's poster or its thumbnail.  
 
-## Poster
+## Posters
 Represents a poster object for a show
 
 ### Fields
@@ -80,3 +71,14 @@ The list of horizontally oriented photos.
 
 ##### background ([[String!](scalars.md#string)])
 The list of photos as the background of the show.
+
+## Service Provider
+Represents a service provider object for a show
+
+### Fields
+
+##### name ([[String!](scalars.md#string)])
+The name of the service provider in plain text
+
+##### id ([[String!](scalars.md#string)])
+The unique/entity id of a show used by the given service provider 

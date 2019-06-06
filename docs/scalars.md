@@ -5,9 +5,6 @@ When calling the GraphQL API, you must specify nested subfields until you return
 ## Boolean
 Represents ``true`` or ``false`` values.
 
-## DateTime
-An ISO-8601 encoded UTC date string.
-
 ## ID
 MongoDB Object ID
 

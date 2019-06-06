@@ -3,7 +3,9 @@ const mongoose = require('mongoose')
 const episodeSchema = new mongoose.Schema({
     showId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Show'
+        ref: 'Show',
+        required: true,
+        index: true
     },
     name: {
         type: String,
@@ -30,5 +32,7 @@ const episodeSchema = new mongoose.Schema({
 }, {
     timestamps: true,
 });
+
+episodeSchema.index({ showId: 1 });
   
 module.exports = mongoose.model('Episode', episodeSchema)
