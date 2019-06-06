@@ -64,3 +64,6 @@ typings/
 .idea/
 .env
 dump.rdb
+
+# logs
+logs/
