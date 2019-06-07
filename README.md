@@ -1,6 +1,8 @@
 # frisky
 Open Source GraphQL API for Online Shows
 
+
+![](docs/assets/others/art.png)
 <!-- ## Build status
 Coming Soon! -->
 

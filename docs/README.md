@@ -9,6 +9,8 @@ frisky is an open source GraphQL project which provides free to use API of TV sh
 Show this project your love by ⭐️this repository on [GitHub](https://github.com/prabhuomkar/frisky).  
 If you are an open source contributor and would like to make this project better contact the developer [here](mailto:prabhuomkar@yandex.com).
 
+![](assets/others/art.png)
+
 ### API Reference
 Check out the [reference documentation](overview.md) for using the GraphQL API
 
