@@ -29,8 +29,6 @@ const episodeSchema = new mongoose.Schema({
       type: String,
       required: true
     }
-}, {
-    timestamps: true,
 });
 
 episodeSchema.index({ showId: 1 });

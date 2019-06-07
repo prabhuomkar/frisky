@@ -1,8 +1,8 @@
 # frisky
 Open Source GraphQL API for Online Shows
 
-## Build status
-Coming Soon!
+<!-- ## Build status
+Coming Soon! -->
 
 ## Technical Stack/Framework Used
 
@@ -40,11 +40,11 @@ npm start
 ## API Reference
 Check out [docs](https://prabhuomkar.github.io/frisky) for more information!
 
-## Tests
-To run testing on your local machine
+<!-- ## Tests
+To run tests
 ```
 npm run test
-```
+``` -->
 
 ## Contribute
 Contributing Guide coming soon!
