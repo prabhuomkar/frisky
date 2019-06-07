@@ -23,7 +23,7 @@ curl -X POST -d " \
  { \
    \"query\": \"query { shows { name }}\" \
  } \
-" https://frisky.github.com/graphql
+" https://frisky.herokuapp.com/graphql
 
 ```
 

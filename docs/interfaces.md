@@ -27,7 +27,7 @@ The show's poster in different formats.
 ##### genres ([String!](scalars.md#string))
 The list of genres of the show
 
-##### serviceProviders ([ServiceProvider!]!(interfaces.md#service-providers))
+##### serviceProviders ([[ServiceProvider!](interfaces.md#service-providers)]!)
 The show's poster in different formats.
 
 ##### creators ([[String!](scalars.md#string)])
