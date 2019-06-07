@@ -1,5 +1,5 @@
 # frisky
-Open Source GraphQL API for Online Shows streamed on Netflix, HBO and Amazon Prime
+Open Source GraphQL API for Online Shows
 
 ## Build status
 Coming Soon!

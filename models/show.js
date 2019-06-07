@@ -29,7 +29,8 @@ const showSchema = new mongoose.Schema({
         type: String
     }],
     genres: [{
-        type: String
+        type: String,
+        required: true
     }],
     posters: {
         horizontal: [{
@@ -43,14 +44,8 @@ const showSchema = new mongoose.Schema({
         }]
     },
     serviceProviders: [{
-        name: {
-            type: String,
-            required: true
-        },
-        id: {
-            type: String,
-            required: true
-        }
+        type: String,
+        required: true
     }],
 }, {
     timestamps: true,

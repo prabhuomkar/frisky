@@ -27,8 +27,8 @@ The show's poster in different formats.
 ##### genres ([String!](scalars.md#string))
 The list of genres of the show
 
-##### serviceProviders ([[ServiceProvider!](interfaces.md#service-providers)]!)
-The show's poster in different formats.
+##### serviceProviders ([[String!](interfaces.md#string)]!)
+The list of service providers for the show
 
 ##### creators ([[String!](scalars.md#string)])
 The list of people who created the show
@@ -74,14 +74,3 @@ The list of horizontally oriented photos.
 
 ##### background ([[String!](scalars.md#string)])
 The list of photos as the background of the show.
-
-## Service Provider
-Represents a service provider object for a show
-
-### Fields
-
-##### name ([[String!](scalars.md#string)])
-The name of the service provider in plain text
-
-##### id ([[String!](scalars.md#string)])
-The unique/entity id of a show used by the given service provider 

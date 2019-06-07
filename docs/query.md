@@ -46,7 +46,7 @@ Look up by field values for shows
 | ``numberOfSeasons`` | ``Int`` | The total count of seasons for the given show |
 | ``year`` | ``Int`` | The year when the show was released |
 | ``genres`` | ``[String]`` | The list of genres for the given show |
-| ``serviceProviders`` | ``ServiceProvider`` | Look up for service provider of the show |
+| ``serviceProviders`` | ``[String]`` | Look up for service provider of the show |
 | ``episodes`` | ``EpisodeWhereInput`` | The episodes of the show |
 
 **orderBy** ([EpisodeOrderByInput](interfaces.md#show))
@@ -100,11 +100,3 @@ Look up for different types of posters of the show
 | ``background`` | ``[String]`` | The description of the show in plain text |
 | ``horizontal`` | ``[String]`` | The list of horizontally oriented photos |
 | ``vertical`` | ``[String]`` | The list of vertically oriented photos. |
-
-**serviceProvider** ([[ServiceProvider!]](interfaces.md#serviceprovider))
-Look up for service provider of the show
-
-| Argument | Type | Description |
-|-------------------|--------------|-------------|
-| ``id`` | ``String`` | The unique/entity id of a show used by the given service provider |
-| ``name`` | ``String`` | The name of the service provider in plain text |
