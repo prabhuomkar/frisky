@@ -16,11 +16,6 @@ type Posters {
     background: [String]
 }
 
-type ServiceProvider {
-    name: String!
-    id: String!
-}
-
 type Show {
     _id: ID!
     name: String!
@@ -33,12 +28,7 @@ type Show {
     genres: [String]
     episodes: [Episode!]!
     posters: Posters!
-    serviceProviders: [ServiceProvider!]!
-}
-
-input ServiceProviderInput {
-    name: String
-    id: String
+    serviceProviders: [String!]!
 }
 
 input ShowWhereInput {
@@ -47,7 +37,7 @@ input ShowWhereInput {
     year: Int
     numberOfSeasons: Int
     genres: [String]
-    serviceProviders: ServiceProviderInput
+    serviceProviders: [String]
     episodes: EpisodeWhereInput
 }
 
