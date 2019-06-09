@@ -3,8 +3,8 @@ const episodeResolver = require('./episode')
 
 
 const rootResolver = {
-    ...showResolver,
-    ...episodeResolver
+	...showResolver,
+	...episodeResolver
 }
 
 module.exports = rootResolver

@@ -38,6 +38,14 @@ cp .env.example .env
 ```
 npm start
 ```
+- Linting the code
+```
+npm run lint
+```
+- Fixing the linting issues
+```
+npm run fix
+```
 
 ## API Reference
 Check out [docs](https://prabhuomkar.github.io/frisky) for more information!
