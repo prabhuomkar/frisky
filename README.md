@@ -1,11 +1,6 @@
 # frisky
 Open Source GraphQL API for Online Shows
 
-
-![](docs/assets/others/art.png)
-<!-- ## Build status
-Coming Soon! -->
-
 ## Technical Stack/Framework Used
 
 ### Built With
@@ -38,6 +33,9 @@ cp .env.example .env
 ```
 npm start
 ```
+
+#### Linting
+
 - Linting the code
 ```
 npm run lint
@@ -47,14 +45,19 @@ npm run lint
 npm run fix
 ```
 
+#### Import Database
+
+- Import shows from sample data
+```
+mongoimport -d <database_name> -c shows seeds/shows.json
+```
+- Import episodes from sample data
+```
+mongoimport -d <database_name> -c episodes seeds/episodes.json
+```
+
 ## API Reference
 Check out [docs](https://prabhuomkar.github.io/frisky) for more information!
-
-<!-- ## Tests
-To run tests
-```
-npm run test
-``` -->
 
 ## Contribute
 Contributing Guide coming soon!
