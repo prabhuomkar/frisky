@@ -4,7 +4,7 @@ frisky
 </h1>
 Open Source GraphQL API for Online Shows
 
-![Illustration](docs/assets/others/illustration.png)
+<center><img src="https://prabhuomkar.github.io/frisky/assets/others/illustration.png" width="75%"></center>
 
 ## Technical Stack/Framework Used
 
