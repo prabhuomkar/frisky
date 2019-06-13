@@ -3,6 +3,8 @@
 frisky
 </h1>
 
+![Illustration](https://prabhuomkar.github.io/frisky/assets/others/illustration.png)
+
 #### Open Source GraphQL API for Online Shows
 frisky is an open source GraphQL project which provides free to use API of TV shows with all basic information and images associated with it. Currently our database contains more than 3400 shows and 100000 episodes along with it.  
   
