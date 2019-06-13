@@ -1,5 +1,10 @@
-# frisky
+<h1>
+<img src="https://prabhuomkar.github.io/frisky/assets/favicons/android-icon-48x48.png" align="center">
+frisky
+</h1>
 Open Source GraphQL API for Online Shows
+
+![Illustration](docs/assets/others/illustration.png)
 
 ## Technical Stack/Framework Used
 
