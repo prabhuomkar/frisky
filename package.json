@@ -41,7 +41,7 @@
     "express-winston": "^3.1.0",
     "graphql": "^14.3.1",
     "helmet": "^3.18.0",
-    "mongoose": "^5.5.13",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1",
     "winston": "^3.2.1"
   }
