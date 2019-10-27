@@ -2,6 +2,7 @@ const express = require('express')
 const graphqlHttp = require('express-graphql')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const Show = require('./models/show')
 const helmet = require('helmet')
 const dotenv = require('dotenv')
 const chalk = require('chalk')
@@ -80,6 +81,17 @@ mongoose
 const connection = mongoose.connection
 connection.on('connected', () => {
 	console.log(chalk.green(`✔︎ Connected to Database: ${dbUri}`))
+	/**
+	 * Sync Indexes for Search 
+	 */
+	Show.syncIndexes()
+		.then(() => {
+			console.log(chalk.green('✔︎ Indexes in place for Search'))
+		})
+		.catch((err) => {
+			console.log(err)
+			console.log(chalk.red('✘ Problem with indexes'))
+		})
 })
 connection.on('error', (err) => {
 	console.log(chalk.red(`✘ Database Error: ${err}`))
