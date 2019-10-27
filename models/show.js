@@ -48,5 +48,6 @@ const showSchema = new mongoose.Schema({
 		required: true
 	}]
 })
-  
+showSchema.index({name: 'text', description: 'text'})
+
 module.exports = mongoose.model('Show', showSchema)
