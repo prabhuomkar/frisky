@@ -32,6 +32,9 @@ const showSchema = new mongoose.Schema({
 		type: String,
 		required: true
 	}],
+	link:  {
+		type: String
+	},
 	posters: {
 		horizontal: [{
 			type: String
@@ -49,5 +52,6 @@ const showSchema = new mongoose.Schema({
 	}]
 })
 showSchema.index({name: 'text', description: 'text'})
+showSchema.index({ name: 1, link: 1}, { unique: true })
 
 module.exports = mongoose.model('Show', showSchema)

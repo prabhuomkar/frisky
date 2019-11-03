@@ -26,6 +26,7 @@ type Show {
     starring: [String]
     directors: [String]
     genres: [String]
+    link: String!
     episodes: [Episode!]!
     posters: Posters!
     serviceProviders: [String!]!
