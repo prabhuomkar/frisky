@@ -33,7 +33,8 @@ const showSchema = new mongoose.Schema({
 		required: true
 	}],
 	link:  {
-		type: String
+		type: String,
+		required: true
 	},
 	posters: {
 		horizontal: [{
