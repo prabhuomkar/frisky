@@ -66,7 +66,7 @@ input EpisodeOrderByInput {
 type Query {
     shows(limit: Int = 10, offset: Int = 0, orderBy: ShowOrderByInput, where: ShowWhereInput): [Show!]!
     episodes(limit: Int = 10, offset: Int = 0, orderBy: EpisodeOrderByInput, where: EpisodeWhereInput): [Episode!]!
-    search(query: String!, limit: Int = 10, offset: Int = 0, orderBy: ShowOrderByInput): [Show!]!
+    search(query: String!, limit: Int = 10, offset: Int = 0, orderBy: ShowOrderByInput, where: ShowWhereInput): [Show!]!
 }
 
 schema {

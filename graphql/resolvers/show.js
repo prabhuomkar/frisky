@@ -7,6 +7,7 @@ module.exports = {
 		try {
 			args.orderBy = args.orderBy ? args.orderBy : { '_id': 1 }
 			args.where = args.where ? args.where : {}
+			if (args.where.serviceProviders) args.where.serviceProviders = JSON.parse('{ "$in": '+ JSON.stringify(args.where.serviceProviders) + '}')
 			let episodeArgs = {}
 			episodeArgs.orderBy = args.orderBy ? (args.orderBy.episodes ? args.orderBy.episodes : {}) : {}
 			episodeArgs.where = args.where ? (args.where.episodes ? args.where.episodes : {}) : {}
